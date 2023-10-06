@@ -1,5 +1,10 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import styled from 'styled-components/native';
+
+const Viewww = styled.View`
+    flex-direction: row;
+`;
 
 const SettingScreen = () => {
     return (
