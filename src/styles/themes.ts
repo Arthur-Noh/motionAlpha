@@ -1,13 +1,15 @@
-import { ITypography } from './typography';
-import { IColor } from './palettes';
-import { ITemplate } from './templates';
-// @ts-ignore
-import baseStyled, { ThemedStyledInterface } from 'styled-components';
+import { ITypography, typography } from './typography';
+import { IColor, color } from './palettes';
+import { ITemplate, template } from './templates';
+
+export const theme: ITheme = {
+    color: color,
+    typography: typography,
+    template: template,
+};
 
 export interface ITheme {
     color: IColor;
     typography: ITypography;
     template: ITemplate;
 }
-
-export const styled = baseStyled as ThemedStyledInterface<ITheme>;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootScreenDefinition } from './routeDefinitions';
+import { theme } from '../styles/themes';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,13 @@ const RootStacks = () => {
                         name={name}
                         component={component}
                         initialParams={initialParams}
+                        options={{
+                            headerStyle: {
+                                backgroundColor: theme.color.white.base,
+                            },
+                            headerTitleAlign: 'center',
+                            headerTintColor: theme.color.black.base,
+                        }}
                     />
                 )
             )}

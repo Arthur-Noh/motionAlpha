@@ -3,8 +3,10 @@
   // @NOTE: styled-component 의 types 를 못 찾는 경우 명시해야지만 해결할 수 있다.
   "compilerOptions": {
     "types": [
-      "styled-components-react-native"
-    ]
-  }
+      "react-native",
+      "jest",
+      "styled-components-react-native",
+    ],
+  },
 }
 

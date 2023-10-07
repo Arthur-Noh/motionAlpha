@@ -1,3 +1,4 @@
+import { fontScaler } from './../functions/scaler';
 export interface ITypography {
     weight: {
         regular: string;
@@ -26,14 +27,14 @@ export const typography: ITypography = {
         bold: '700',
     },
     size: {
-        s1: 11,
-        s2: 12,
-        s3: 13,
-        m1: 15,
-        m2: 16,
-        m3: 17,
-        l1: 19,
-        l2: 20,
-        l3: 21,
+        s1: fontScaler(11),
+        s2: fontScaler(12),
+        s3: fontScaler(13),
+        m1: fontScaler(15),
+        m2: fontScaler(16),
+        m3: fontScaler(17),
+        l1: fontScaler(19),
+        l2: fontScaler(20),
+        l3: fontScaler(21),
     },
 };

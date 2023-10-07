@@ -15,10 +15,10 @@ const SettingScreens = {
     },
 };
 
-export interface RootScreenParamLists {
+export type RootScreenParamLists = {
     HomeScreen: undefined;
     SettingScreen: undefined;
-}
+};
 
 export const RootScreenDefinition = {
     ...HomeScreens,
